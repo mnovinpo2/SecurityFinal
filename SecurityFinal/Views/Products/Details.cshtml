@@ -1,0 +1,36 @@
+﻿@model MyGuitarShopData.Product
+
+@{
+    ViewData["Title"] = "Product Details: " + Model.ProductName;
+}
+
+<div class="product-details">
+    <h2>@Model.ProductName</h2>
+    <div>
+        <h3>Price: @Model.ListPrice.ToString("C")</h3>
+        @if (Model.DiscountPercent > 0)
+        {
+            <h4>Discount: @String.Format("{0:P}", Model.DiscountPercent / 100)</h4>
+            <h4>Sale Price: @((Model.ListPrice * (1 - Model.DiscountPercent / 100)).ToString("C"))</h4>
+        }
+        <div>
+            <div>
+                <h3>Description:</h3> <p>@Model.Description</p> <!-- Modified line -->
+            </div>
+        </div>
+        @if (Model.Category != null)
+        {
+            <p>Category: @Model.Category.CategoryName</p>
+        }
+        @if (Model.DateAdded.HasValue)
+        {
+            <p>Date Added: @Model.DateAdded.Value.ToString("D")</p>
+        }
+        <a asp-controller="Products" asp-action="Index" class="btn btn-primary">Back to Products</a>
+    </div>
+    <form asp-controller="Products" asp-action="Purchase" method="post">
+        <input type="hidden" name="id" value="@Model.ProductId" />
+        <button type="submit" class="btn btn-success">Purchase</button>
+    </form>
+</div>
+</div>

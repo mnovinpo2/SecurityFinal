@@ -1,0 +1,33 @@
+﻿@model MyGuitarShopData.Customer
+
+@{
+    ViewData["Title"] = "View Information";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.EmailAddress)
+            </dd>
+        </dl>
+        <a asp-action="EditInformation" class="btn btn-primary">Edit Information</a>
+    </div>
+</div>

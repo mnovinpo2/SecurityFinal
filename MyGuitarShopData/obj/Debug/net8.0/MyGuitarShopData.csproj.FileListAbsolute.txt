@@ -1,0 +1,14 @@
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\bin\Debug\net8.0\MyGuitarShopData.deps.json
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\bin\Debug\net8.0\MyGuitarShopData.runtimeconfig.json
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\bin\Debug\net8.0\MyGuitarShopData.dll
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\bin\Debug\net8.0\MyGuitarShopData.pdb
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.csproj.AssemblyReference.cache
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.AssemblyInfoInputs.cache
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.AssemblyInfo.cs
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.csproj.CoreCompileInputs.cache
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.dll
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\refint\MyGuitarShopData.dll
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.pdb
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\MyGuitarShopData.genruntimeconfig.cache
+C:\Users\mnovi\source\repos\SecurityFinal\MyGuitarShopData\obj\Debug\net8.0\ref\MyGuitarShopData.dll

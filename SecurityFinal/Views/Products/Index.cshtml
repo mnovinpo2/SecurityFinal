@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MyGuitarShopData.Product>
+
+<form method="get" style="margin-bottom: 20px;">
+    <input type="text" name="search" />
+    <input type="submit" value="Search" />
+</form>
+
+<table style="width: 100%; border-collapse: separate; border-spacing: 0 15px;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="padding: 10px;">Product Name</th>
+            <th style="padding: 10px;">Price</th>
+            <th style="padding: 10px;">Discount</th>
+            <th style="padding: 10px;">Date Added</th>
+            <th style="padding: 10px;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr style="background-color: #fff;">
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">
+                    <!-- Make product name clickable and link to the details view -->
+                    <a href="@Url.Action("Details", "Products", new { id = product.ProductId })" style="text-decoration: none;">@product.ProductName</a>
+                </td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@product.ListPrice.ToString("C")</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@String.Format("{0:P}", product.DiscountPercent / 100)</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@(product.DateAdded.HasValue ? product.DateAdded.Value.ToString("d") : "N/A")</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">
+                    <a href="@Url.Action("Purchase", "Products", new { id = product.ProductId })" style="color: blue; text-decoration: none;">Purchase</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
